@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderPendingDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/action_round" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-2dp"
+        android:elevation="10dp"
+
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle"
+                        android:drawablePadding="8dp"
+                        android:padding="2dp"
+                        android:text="Order ID:"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:id="@+id/txt_orderid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="#123"
+                        android:textColor="@color/colorBalck"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle"
+                        android:drawablePadding="8dp"
+                        android:padding="2dp"
+                        android:text="TOTAL:"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:id="@+id/txt_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="#123"
+                        android:textColor="@color/colorBalck"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle"
+                        android:drawablePadding="8dp"
+                        android:padding="2dp"
+                        android:text="Time:"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="#123"
+                        android:textColor="@color/colorBalck"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle"
+                        android:drawablePadding="8dp"
+                        android:padding="2dp"
+                        android:text="QTY:"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:id="@+id/txt_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="#10"
+                        android:textColor="@color/colorBalck"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:drawablePadding="8dp"
+                    android:padding="2dp"
+                    android:text="Name:"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Case on "
+                    android:textColor="@color/colorBalck"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:drawablePadding="8dp"
+                    android:padding="2dp"
+                    android:text="Email:"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="abc@gmail.com "
+                    android:textColor="@color/colorBalck"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:drawablePadding="8dp"
+                    android:padding="2dp"
+                    android:text="Payment Mode:"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/txt_paymode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Case on "
+                    android:textColor="@color/colorBalck"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_circle"
+                    android:drawablePadding="8dp"
+                    android:padding="2dp"
+                    android:text="Address:"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="266 ,Apple "
+                    android:textColor="@color/colorBalck"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pendingpay_round"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=" Unpaid "
+                    android:textColor="@color/colorWhite" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp">
+
+                <LinearLayout
+                    android:id="@+id/lvl_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="vertical" />
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:background="@drawable/pending_round"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="  Pending "
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/lvl_dilevry"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_deliverd"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_round"
+                    android:gravity="center"
+                    android:text="Deliverd"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout xmlns:rfal="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_main_rfal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            rfal:rfal_frame_alpha="0.7"
+            rfal:rfal_frame_color="#ffffff">
+
+            <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton xmlns:rfab="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_main_rfab"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="0dp"
+
+                android:padding="1dp"
+                rfab:rfab_color_normal="@color/colorWhite"
+                rfab:rfab_color_pressed="@color/colorPrimary"
+                rfab:rfab_drawable="@drawable/ic_clear_red"
+                rfab:rfab_shadow_color="#E1DFDF"
+                rfab:rfab_shadow_dx="1dp"
+                rfab:rfab_shadow_dy="1dp"
+                rfab:rfab_shadow_radius="10dp"
+                rfab:rfab_size="mini" />
+        </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
+
+        <LinearLayout
+            android:id="@+id/lvl_accept_reject"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txt_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_round_green"
+                    android:gravity="center"
+                    android:text="Accept"
+                    android:textColor="@color/colorWhite" />
+
+
+                <TextView
+                    android:id="@+id/txt_reject"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round_red"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:text="Reject"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

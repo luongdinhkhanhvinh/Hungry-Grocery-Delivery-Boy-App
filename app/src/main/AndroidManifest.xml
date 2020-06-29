@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cscodetech.freshfastfooddeliveryboy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.cscodetech.freshfastfooddeliveryboy.activity.SignatureActivity"
+            android:theme="@style/AppTheme1"></activity>
+        <activity
+            android:name="com.cscodetech.freshfastfooddeliveryboy.activity.OrderDeliverDetailsActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.cscodetech.freshfastfooddeliveryboy.activity.OrderPendingDetailsActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name="com.cscodetech.freshfastfooddeliveryboy.activity.HomeActivity" />
+        <activity
+            android:name="com.cscodetech.freshfastfooddeliveryboy.activity.LoginActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name="com.cscodetech.freshfastfooddeliveryboy.MainActivity" />
+        <activity
+            android:name="com.cscodetech.freshfastfooddeliveryboy.activity.ProfileActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.cscodetech.freshfastfooddeliveryboy.activity.InfoActivity"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

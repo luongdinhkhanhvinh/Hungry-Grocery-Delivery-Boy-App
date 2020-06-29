@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SignatureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            app:penColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="5">
+
+
+            <TextView
+                android:id="@+id/txt_done"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/button_round"
+                android:elevation="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"    android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/txt_clear"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_round_red"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="10dp"    android:gravity="center"
+                android:text="Clear"
+                android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>
